@@ -32,4 +32,4 @@
 ::
 ::978f952a14a936cc963da21a135fa983
 @echo off
-powershell -windowstyle hidden -file "%~dp0start-app-environment.ps1"
+powershell -ExecutionPolicy Bypass -windowstyle hidden -file "%~dp0start-app-environment.ps1"
