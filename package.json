@@ -68,10 +68,8 @@
       "output": "dist"
     },
     "files": [
-      "dist/**/*",
       "node_modules/**/*",
-      "main.js",
-      "preload.js",
+      "out/main/main.js",
       "package.json",
       "start-app-environment.ps1",
       "Lizi.bat"

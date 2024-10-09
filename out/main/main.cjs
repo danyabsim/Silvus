@@ -66,11 +66,9 @@ function createWindow() {
   mainWindow = new electron.BrowserWindow({
     icon: path.join(__dirname, '../../public/Lizi.ico'),
     webPreferences: {
-      preload: path__namespace.join(__dirname, "../preload/preload.cjs"),
-      webSecurity: false,
+      webSecurity: true,
       enableRemoteModule: true, // Allow remote module usage
       touchSupport: true, // Enable touch support for virtual keyboards
-      contextIsolation: false, // Allow IPC between renderer and main processes
       nodeIntegration: true // Allow Node.js integration in the renderer
     }
   });
